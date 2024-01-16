@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color: rgba(0, 0, 0, 0.5);
+  --border-radius: 10px;
+}
+
+body {
+  width: 450px;
+  height: auto;
+  border: 1px solid;
+  border-radius: var(--border-radius);
+  margin: 20px auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: 900;
+  color: var(--color);
+}
+
+.tele-logo {
+  margin: -5px 10px 0 0;
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--color);
+  border-radius: 50%;
+}
+
+.fa {
+  margin: 5px;
+}
+
+.img-container {
+  width: 270px;
+  height: 270px;
+  margin: auto;
+}
+
+.photo {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  border: 10px solid rgb(251, 251, 251);
+  box-shadow: 0px 7px 3px 0px rgba(34, 60, 80, 0.2);
+}
+
+.user-info {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  font-size: 18px;
+}
+
+.btn-follow {
+  width: 140px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 2px 1px rgba(34, 60, 80, 0.2);
+  background-color: rgb(77, 172, 255);
+  font-size: 20px;
+}
+
+.follow {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(40, 64, 111);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.footer-menu {
+  border: 1px solid;
+  flex-grow: 1;
+  /* align-items: center; */
+}
+
+.footer-menu > p {
+  margin: 0;
+}
+
+.favorites::before {
+  content: '\2661';
+}
